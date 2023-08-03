@@ -1,0 +1,339 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+}
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  width: 97%;
+  padding: 10px;
+}
+body header:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+a {
+  color: #921276;
+  text-decoration: none;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+a:hover {
+  color: var(linkh);
+  text-decoration: underline;
+}
+
+a:active {
+  color: #690955;
+}
+
+a:visited {
+  color: #a10094;
+}
+
+.navl {
+  margin: 20;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  width: 12%;
+  min-width: 160px;
+}
+
+.navi {
+  display: inline-block;
+  margin-left: 10px;
+}
+.navi a {
+  padding: 5px 10px;
+  text-decoration: underline;
+  -webkit-box-shadow: inset 0 0 0 0 #146d8d;
+          box-shadow: inset 0 0 0 0 #146d8d;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.navi a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: inset 100px 0 0 0 #00d7e6;
+          box-shadow: inset 100px 0 0 0 #00d7e6;
+}
+.navi a.home {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.navi a.home:hover {
+  text-decoration: underline;
+}
+
+.home {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.propic {
+  float: left;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 20px;
+}
+
+.highlight {
+  background-color: #333333;
+  color: orange;
+  padding: 1px 3px;
+  border-radius: 4px;
+}
+
+.foot {
+  padding: 20px;
+  text-align: center;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+}
+
+h1.contact-page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact-message {
+  width: 300px;
+  font-size: 20px;
+}
+
+.contact-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-form {
+  max-width: 400px;
+}
+
+.standard-label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007128;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 1;
+    font-family: inherit;
+    transition-duration: 200ms;
+    transition-property: opacity;
+  }
+  
+  .btn:hover {
+    background-color: #006633;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .cv {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+.skills-section {
+  padding: 20px;
+  text-align: center;
+}
+.skills-section .section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.skills-section .skills-table {
+  width: 300px;
+  border-collapse: collapse;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 auto;
+}
+.skills-section .skills-table th {
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+}
+.skills-section .skills-table td {
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+}
+.skills-section .skills-table th {
+  background-color: #f2f2f2;
+}
+.skills-section .skills-table td {
+  text-align: center;
+}
+
+.gritem {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+.gritem .item-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.gritem .item img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.gritem .item-description {
+  font-size: 14px;
+}
+.gritem:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+.il {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.skylined {
+  display: none;
+  width: 97%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.cloud {
+  width: 90px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-name: cloud;
+          animation-name: cloud;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud {
+  from {
+    -webkit-transform: translate(30px, 70px);
+            transform: translate(30px, 70px);
+  }
+  to {
+    -webkit-transform: translate(250px, 50px);
+            transform: translate(250px, 50px);
+  }
+}
+
+@keyframes cloud {
+  from {
+    -webkit-transform: translate(30px, 70px);
+            transform: translate(30px, 70px);
+  }
+  to {
+    -webkit-transform: translate(250px, 50px);
+            transform: translate(250px, 50px);
+  }
+}

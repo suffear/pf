@@ -1,0 +1,319 @@
+// SCSS
+$h1: 26px;
+$h2: 24px;
+$h3: 22px;
+$h4: 20px;
+$primary-color: #007128;
+$secondary-color: #146d8d;
+$highlightbg-color: #333333;
+$highlight-color: orange;
+$link-color: #921276;
+$link-hover-color: #96337d;
+$active-color: #690955;
+$visited-color: #a10094;
+$light-gray: #f2f2f2;
+$dark-green: #008000;
+$white: #fff;
+$black: #000;
+
+$bg-color-light: lighten($dark-green, 20%);
+
+body {
+  color: $black;
+  background-color: $white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: var($h4);
+  line-height: normal;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 97%;
+    padding: 10px;
+
+    &:last-child {
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all 200ms; 
+}
+
+a:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: $active-color;
+}
+  
+a:visited {
+    color: $visited-color ;
+}
+
+.navl {
+  margin: 20;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+    width: 12%;
+    min-width: 160px;
+  }
+  
+.navi {
+  display: inline-block;
+  margin-left: 10px;
+
+  a {
+    padding: 5px 10px;
+    text-decoration: underline;
+    box-shadow: inset 0 0 0 0 $secondary-color;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 100px 0 0 0 $bg-color-light;
+    }
+
+    &.home {
+      padding: 5px 10px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.home {
+  margin: 0 auto;
+}
+
+.propic {
+  float: left;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 20px;
+}
+
+.highlight {
+  background-color: $highlightbg-color;
+  color: $highlight-color;
+  padding: 1px 3px;
+  border-radius: 4px;
+}
+
+.foot {
+  padding: 20px;
+  text-align: center;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+}
+
+h1.contact-page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-message {
+  width: 300px;
+  font-size: 20px;
+}
+
+.contact-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-form {
+  max-width: 400px;
+}
+
+.standard-label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007128;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 1;
+  font-family: inherit;
+  transition-duration: 200ms;
+  transition-property: opacity;
+
+  &:hover {
+    background-color: #006633;
+    color: $white;
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.skills-section {
+  padding: 20px;
+  text-align: center;
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills-table {
+    width: 300px;
+    border-collapse: collapse;
+    object-position: center;
+    margin: 0 auto;
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid $light-gray;
+    }
+
+    th {
+      background-color: $light-gray;
+    }
+
+    td {
+      text-align: center;
+    }
+  }
+}
+
+.cv {
+    object-position: center;
+    margin: 0 auto;
+  }
+
+%box-shared {
+    background-color: $light-gray;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+.gritem {
+    @extend %box-shared;
+  
+    .item-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  
+    .item-description {
+      font-size: 14px;
+    }
+  
+    &:hover {
+      box-shadow: none; 
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.il {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+// for dark mode later on
+.skylined {
+    display: none;
+    width: 97%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+.cloud {
+  width: 90px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  animation-duration: 20s;
+  animation-name: cloud;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud {
+  from {
+    transform: translate(30px, 70px);
+  }
+  to {
+    transform: translate(250px, 50px);
+  }
+}
