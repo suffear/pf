@@ -5,32 +5,11 @@
 * Browsers: last 4 version
 */
 
-:root {
-  --h1: 24px;
-  --h2: 22px;
-  --h3: 20px;
-  --h4: 18px;
-
-  --white: #fff;
-  --black: #000;
-  --link: #921276;
-  --linkh: #96337d;
-  --linka: #690955;
-  --linkv: #a10094;
-  --navh: #00d7e6;
-  --nav: #146d8d;
-  --hlbg: #333333;
-  --hl: orange;
-  --lgray: #f2f2f2;
-  --shadow: rgba(0, 0, 0, 0.2);
-
-}
-
 body {
-  color: var(--black);
-  background-color: var(--white);
+  color: #000;
+  background-color: #fff;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: var(--h3);
+  font-size: 20px;
   line-height: normal;
 }
 
@@ -41,7 +20,7 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: var(--h4);
+  font-size: 18px;
   width: 97%;
   padding: 10px;
 }
@@ -54,7 +33,7 @@ body header:last-child {
 }
 
 a {
-  color: var(--link);
+  color: #921276;
   text-decoration: none;
   -webkit-transition: all 200ms;
   -o-transition: all 200ms;
@@ -67,11 +46,11 @@ a:hover {
 }
 
 a:active {
-  color: var(--linka);
+  color: #690955;
 }
 
 a:visited {
-  color: var(--linkv);
+  color: #a10094;
 }
 
 .navl {
@@ -93,8 +72,8 @@ a:visited {
 .navi a {
   padding: 5px 10px;
   text-decoration: underline;
-  -webkit-box-shadow: inset 0 0 0 0 var(--nav);
-          box-shadow: inset 0 0 0 0 var(--nav);
+  -webkit-box-shadow: inset 0 0 0 0 #146d8d;
+          box-shadow: inset 0 0 0 0 #146d8d;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -106,8 +85,8 @@ a:visited {
 
 .navi a:hover {
   text-decoration: none;
-  -webkit-box-shadow: inset 100px 0 0 0 var(--navh);
-          box-shadow: inset 100px 0 0 0 var(--navh);
+  -webkit-box-shadow: inset 100px 0 0 0 #00d7e6;
+          box-shadow: inset 100px 0 0 0 #00d7e6;
 }
 
 .navi a.home {
@@ -137,8 +116,8 @@ a:visited {
 }
 
 .highlight {
-  background-color: var(--hlbg);
-  color: var(--hl);
+  background-color: #333333;
+  color: orange;
   padding: 1px 3px;
   border-radius: 4px;
 }
@@ -154,7 +133,7 @@ a:visited {
 }
 
 h1.contact-page-title {
-  font-size: var(--h1);
+  font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -197,7 +176,7 @@ h1.contact-page-title {
 .form-control {
   width: 100%;
   padding: 8px;
-  border: 1px solid var(--lgray);
+  border: 1px solid #f2f2f2;
   border-radius: 4px;
 }
 
@@ -205,7 +184,7 @@ h1.contact-page-title {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007128;
-  color: var(--white);
+  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -221,7 +200,7 @@ h1.contact-page-title {
 
 .btn:hover {
   background-color: #006633;
-  color: var(--white);
+  color: #fff;
   text-decoration: none;
   opacity: 0.8;
   cursor: pointer;
@@ -312,14 +291,18 @@ h1.contact-page-title {
   margin: 0 auto;
 }
 
-.skills-section .skills-table th,
+.skills-section .skills-table th {
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+}
+
 .skills-section .skills-table td {
   padding: 10px;
-  border: 1px solid var(--lgray);
+  border: 1px solid #f2f2f2;
 }
 
 .skills-section .skills-table th {
-  background-color: var(--lgray);
+  background-color: #f2f2f2;
 }
 
 .skills-section .skills-table td {
@@ -333,11 +316,11 @@ h1.contact-page-title {
 }
 
 .gritem {
-  background-color: var(--lgray);
+  background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-  -webkit-box-shadow: 0 2px 4px var(--shadow);
-          box-shadow: 0 2px 4px var(--shadow);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: -webkit-box-shadow 0.3s ease-in-out;
